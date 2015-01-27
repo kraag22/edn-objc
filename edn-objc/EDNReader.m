@@ -460,9 +460,10 @@ id EDNParseSymbolType(id<EDNReaderState> parserState, Class symbolClass) {
         }
     // failed to parse a valid literal
     // TODO: userinfo
-    parserState.error = [NSError errorWithDomain:EDNErrorDomain
-                                            code:EDNErrorInvalidData
-                                        userInfo:nil];
+//    parserState.error = [NSError errorWithDomain:EDNErrorDomain
+//                                            code:EDNErrorInvalidData
+//                                        userInfo:nil];
+
     return nil;
 }
 

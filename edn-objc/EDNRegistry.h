@@ -9,6 +9,8 @@
 //  to ensure all de/serialization properly binds.
 
 #import <Foundation/NSObjCRuntime.h>
+#import <Foundation/Foundation.h>
+
 @class EDNSymbol;
 
 /**
@@ -16,7 +18,7 @@
  to bind without a category (or re-bind to a class or tag with
  an existing or stock category).
  */
-typedef id (^EDNTransmogrifier)(id, NSError **) DEPRECATED_MSG_ATTRIBUTE("planning to remove by v1.0");
+typedef id (^EDNTransmogrifier)(id, NSError **);
 
 /**
  Register a class that conforms to EDNRepresentation.

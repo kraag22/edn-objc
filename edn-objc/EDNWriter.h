@@ -10,9 +10,9 @@
 
 @interface EDNWriter : NSObject
 
--(instancetype)initWithTransmogrifiers:(NSDictionary *)transmogrifiers DEPRECATED_ATTRIBUTE;
+-(instancetype)initWithTransmogrifiers:(NSDictionary *)transmogrifiers;
 
-@property (strong, readonly, nonatomic) NSDictionary * transmogrifiers DEPRECATED_ATTRIBUTE;
+@property (strong, readonly, nonatomic) NSDictionary * transmogrifiers;
 
 // TODO: write into (or append to) an existing NSData?
 -(NSData *)writeToData:(id)obj error:(NSError **)error;
