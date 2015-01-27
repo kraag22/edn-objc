@@ -6,10 +6,12 @@
 //  Copyright (c) 2013 Ben Mosher. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #ifndef edn_objc_EDNError_h
 #define edn_objc_EDNError_h
 
-typedef enum : NSInteger  {
+typedef enum {
     EDNErrorNone = 0,
     EDNErrorNoData,
     EDNErrorInvalidData,
