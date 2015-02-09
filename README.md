@@ -1,6 +1,8 @@
 edn-objc
 ========
 
+[![build](https://travis-ci.org/benmosher/edn-objc.svg?branch=master)](https://travis-ci.org/benmosher/edn-objc)
+
 A work-in-progress implementation of [edn-format](https://github.com/edn-format/edn) for Objective-C/Foundation platforms (e.g. iOS and OSX).
 
 Current design goals are completeness and spec adherence. Any valid edn data deserialized into Cocoa/EDN objects should be serialized back to the same edn UTF-8 data (barring whitespace, both in strings and amidst the edn data). This includes the 'root'; the top-level objects that are not within any root container.
